@@ -6,6 +6,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <div className="mt-50" />
     </>
   );
 }
