@@ -52,12 +52,12 @@ const CounterCard = ({
     <div
       className={`p-10 text-center border-b md:border-b-transparent ${className}`}
     >
-      <h4 className="text-5xl font-light">
+      <h4 className="text-4xl md:text-5xl font-light">
         {Beforetitle}
         <CountUp start={start} end={end} duration={5} />
         {Aftertitle}
       </h4>
-      <p className="text-2xl text-gray-400">{subTitle}</p>
+      <p className="text-xl md:text-2xl text-gray-400">{subTitle}</p>
     </div>
   );
 };
