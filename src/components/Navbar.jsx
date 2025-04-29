@@ -8,27 +8,27 @@ const Navbar = () => {
     return (
       <>
         <li
-          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
+          className={`relative py-4 uppercase flex font-medium cursor-pointer transition-all duration-500 text-[#38b6ff] ${className}`}
         >
           <a href="#">Home</a>
         </li>
         <li
-          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
+          className={`relative py-4 uppercase flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">About</a>
         </li>
         <li
-          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
+          className={`relative py-4 uppercase flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Podcasts</a>
         </li>
         <li
-          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
+          className={`relative py-4 uppercase flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Portfolio</a>
         </li>
         <li
-          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
+          className={`relative py-4 uppercase flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Contact</a>
         </li>
@@ -86,7 +86,6 @@ const Navbar = () => {
                   className="w-full"
                   loading="lazy"
                 />
-                Rakib Developer
               </a>
             </div>
             <OutsideClickHandler
@@ -100,7 +99,7 @@ const Navbar = () => {
                 className="hidden justify-between items-center w-full md:flex"
               >
                 <ul className="flex justify-center items-center gap-10 tracking-[.1rem]">
-                  <NavLists className={'listHover'} />
+                  <NavLists className={'text-md listHover'} />
                 </ul>
               </div>
             </OutsideClickHandler>
@@ -122,20 +121,18 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </div>
 
-      {/* small screen */}
-      <div
-        id="menu"
-        className={
-          isNavOpen
-            ? 'sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-300 m-auto scale-x-100 z-1 md:hidden'
-            : 'hidden'
-        }
-      >
-        <ul className="flex justify-center items-center flex-col leading-0.5">
-          <NavLists className={'sm:py-4'} />
-        </ul>
+        {/* small screen */}
+        <div
+          id="menu"
+          className={`transition-all origin-top duration-300 top-20 flex justify-between items-center flex-col w-full p-5 gap-10 bg-black text-white m-auto z-1 md:hidden ${
+            isNavOpen ? 'scale-y-100 ' : 'scale-y-0'
+          }`}
+        >
+          <ul className="flex justify-center items-center flex-col gap-2 tracking-[.1rem]">
+            <NavLists className={'text-sm sm:py-4'} />
+          </ul>
+        </div>
       </div>
     </div>
   );
