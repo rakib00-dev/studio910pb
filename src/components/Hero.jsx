@@ -1,16 +1,21 @@
 const Hero = () => {
   return (
     <section className="max-w-7xl mx-auto w-full">
-      <div className="px-19">
+      <div className="px-6 md:px-19">
         {/* text content */}
-        <div></div>
+        <div className="pt-5 pb-20 grid gap-5 uppercase">
+          <h1 className="text-center text-[2.4rem] md:text-[4rem] font-light">
+            Your <span className="text-[#38b6ff]">bespoke</span> partner.
+          </h1>
+          <h3 className="text-center text-[1.8rem] md:text-[2.5rem] font-light">
+            Luxury real estate media to impress
+          </h3>
+        </div>
         {/* video content */}
-        <div className="w-full">
+        <div className="relative overflow-hidden w-full pt-[56.25%]">
           <iframe
             src="https://player.vimeo.com/video/855018152?muted=1&autoplay=1&loop=1&background=1&app_id=122963"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-            className="heroVideo"
+            className="absolute inset-0 w-full h-full"
           ></iframe>
         </div>
       </div>

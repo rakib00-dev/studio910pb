@@ -8,6 +8,7 @@
 
 body {
   background: var(--bg-main);
+  color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,8 +20,5 @@ body {
 /* Navbar section ⬆️ */
 
 /* Hero section ⬇️ */
-/* .heroVideo {
-  width: 100%;
-  height: 100%;
-} */
+
 /* Hero section ⬆️ */
