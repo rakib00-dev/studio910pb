@@ -7,27 +7,27 @@ const Navbar = () => {
     return (
       <>
         <li
-          className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 text-white hover:text-yellow-500 md:text-lg ${className}`}
+          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Home</a>
         </li>
         <li
-          className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 text-white hover:text-yellow-500 md:text-lg ${className}`}
+          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">About</a>
         </li>
         <li
-          className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 text-white hover:text-yellow-500 md:text-lg ${className}`}
+          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Podcasts</a>
         </li>
         <li
-          className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 text-white hover:text-yellow-500 md:text-lg ${className}`}
+          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Portfolio</a>
         </li>
         <li
-          className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 text-white hover:text-yellow-500 md:text-lg ${className}`}
+          className={`relative py-4 uppercase text-md flex font-medium cursor-pointer transition-all duration-500 text-white ${className}`}
         >
           <a href="#">Contact</a>
         </li>
@@ -68,21 +68,21 @@ const Navbar = () => {
   return (
     <div className="max-w-7xl mx-auto w-full">
       <div
-        className="m-auto transition-all duration-700 top-0 z-20 fixed w-full"
+        className="m-auto transition-all duration-700 h-38 top-0 z-20 fixed w-full"
         id="navBarFix"
         // ref={navBarFix}
       >
         <nav
           id="nav"
-          className="relative flex justify-between items-center px-6 py-4  border border-gray-500 p-4 w-full overflow-hidden lg:py-0.5 bg-black"
+          className="relative flex justify-between items-center w-full overflow-hidden lg:py-0.5 bg-black"
         >
-          <div className="flex justify-betweene items-center w-full gap-6 min-[375px]:gap-14 min-[440px]:gap-22 min-[550px]:gap-35 min-[695px]:gap-45 md:gap-60 lg:gap-80 xl:gap-115 2xl:gap-125">
-            <div id="logo" className="text-md font-medium w-80 md:text-lg">
+          <div className="flex justify-between items-center w-full px-10">
+            <div id="logo" className="text-md font-medium w-18 md:text-lg">
               <a href="#" className="flex items-center">
                 <img
                   src="/images/Studio-910-Logobluewhite.svg"
                   alt=""
-                  className="h-4 w-4 mr-2"
+                  className="w-full"
                   loading="lazy"
                 />
                 Rakib Developer
@@ -98,8 +98,8 @@ const Navbar = () => {
                 id="menu"
                 className="hidden justify-between items-center w-full md:flex"
               >
-                <ul className="flex justify-center items-center gap-7">
-                  <NavLists className={'hoverUnderLine'} />
+                <ul className="flex justify-center items-center gap-10 tracking-[.1rem]">
+                  <NavLists className={'listHover'} />
                 </ul>
               </div>
             </OutsideClickHandler>

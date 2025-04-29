@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
-/* header section ⬇️ */
-
 :root {
   --bg-main: #000;
   --primary-blue: #38b6ff;
@@ -13,23 +11,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.hoverUnderLine::after {
-  content: '';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2px;
-  background: #ffdf20;
-  width: 0%;
-  transition: 0.3s ease-in-out;
+/* header section ⬇️ */
+.listHover:hover {
+  color: var(--primary-blue);
+  translate: 12px;
 }
-
-.hoverUnderLine:hover {
-  opacity: 0.8;
-}
-
-.hoverUnderLine:hover::after {
-  width: 100%;
-}
-
 /* header section ⬆️ */
