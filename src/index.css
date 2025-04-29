@@ -24,6 +24,10 @@ body {
   transform: translateY(-8px);
 }
 
+.jumpHoverBottom:hover {
+  transform: translateY(8px);
+}
+
 /* Navbar section ⬇️ */
 .listHover:hover {
   color: var(--primary-blue);
@@ -86,3 +90,13 @@ body {
   }
 }
 /* swimming pool section ⬆️ */
+
+/* footer section ⬇️ */
+.footerImgText {
+  height: 600px;
+  background: url('/images/footer/Photo-Feb-07-2024-5-48-26-PM-8-scaled.jpg')
+    100%;
+  background-position: center;
+  background-size: cover;
+}
+/* footer section ⬆️ */

@@ -6,11 +6,12 @@ import {
   FaSpotify,
   FaYoutube,
 } from 'react-icons/fa';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const Footer = () => {
   return (
     <footer className="">
-      <div className="py-20 overflow-hidden">
+      <div className="pt-20 overflow-hidden">
         {/* wait list */}
         <div className="wrappergrid place-items-center gap-5 pb-10 md:pb-20">
           <h1 className="text-center text-[2.4rem] md:text-[4rem] uppercase ">
@@ -112,6 +113,21 @@ const Footer = () => {
                 Privacy Policy
               </a>
             </div>
+          </div>
+        </div>
+
+        <div className="wrapper relative footerImgText grid place-items-center">
+          <div className="absolute inset-0  bg-[#181715a7]"></div>
+          <div className="grid place-items-center z-10">
+            <h2 className="text-center text-[1.5rem] md:text-[2.5rem] font-light leading-8 md:leading-12 uppercase">
+              Discover our Excellence
+            </h2>
+            <a
+              href="https://studio910pb.com/contact/"
+              className="transition-all duration-300 text-white hover:text-[#bbb] capitalize flex gap-2 items-center border-b py-2 w-fit jumpHoverBottom text-center"
+            >
+              Experience 910 <IoIosArrowForward />
+            </a>
           </div>
         </div>
       </div>

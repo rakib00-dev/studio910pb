@@ -26,7 +26,6 @@ function App() {
       <Testimonial />
       <SwimmingPool />
       <Footer />
-      <div className="mt-50" />
     </>
   );
 }
