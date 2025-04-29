@@ -77,7 +77,7 @@ const Navbar = () => {
           id="nav"
           className="relative flex justify-between items-center w-full overflow-hidden lg:py-0.5 bg-black"
         >
-          <div className="flex justify-between items-center w-full px-10">
+          <div className="flex justify-between items-center w-full px-6 md:px-10">
             <div id="logo" className="text-md font-medium w-18 md:text-lg">
               <a href="#" className="flex items-center">
                 <img
