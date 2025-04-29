@@ -55,6 +55,7 @@ const GrowBussiness = () => {
                   alt="company card"
                   width={140}
                   className="w-full h-full"
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>

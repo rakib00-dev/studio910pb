@@ -40,6 +40,7 @@ const CompanyCarousel = () => {
                   alt="company card"
                   width={200}
                   className="scale-70 h-auto"
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>
