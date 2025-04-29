@@ -33,7 +33,6 @@ const GrowBussiness = () => {
         </div>
         <Swiper
           {...sliderSettings}
-          slidesPerView={3}
           spaceBetween={30}
           loop={true}
           centeredSlides={true}
