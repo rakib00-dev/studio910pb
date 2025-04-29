@@ -67,7 +67,7 @@ const Navbar = () => {
   // }, []);
 
   return (
-    <div className="max-w-7xl mx-auto w-full">
+    <div className="max-w-7xl mx-auto w-full mb-22">
       <div
         className="m-auto transition-all duration-700 h-38 top-0 z-20 fixed w-full"
         id="navBarFix"
