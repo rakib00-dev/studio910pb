@@ -80,5 +80,9 @@ body {
     repeat fixed 100%;
   background-position: center;
   background-size: cover;
+
+  @media (width <= 600px) {
+    height: 450px;
+  }
 }
 /* swimming pool section ⬆️ */
