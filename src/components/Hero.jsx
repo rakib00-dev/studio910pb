@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <section className="max-w-7xl mx-auto w-full">
-      <div className="px-6 md:px-19">
+    <section className="sectionWidth">
+      <div className="wrapper">
         {/* text content */}
         <div className="pt-5 pb-20 grid gap-5 uppercase">
           <h1 className="text-center text-[2.4rem] md:text-[4rem] font-light">
