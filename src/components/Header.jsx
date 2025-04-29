@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import './header.css';
 import { RiMenu3Fill } from 'react-icons/ri';
 import OutsideClickHandler from 'react-outside-click-handler';
 
