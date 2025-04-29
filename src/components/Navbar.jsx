@@ -75,9 +75,9 @@ const Navbar = () => {
       >
         <nav
           id="nav"
-          className="relative flex justify-between items-center w-full overflow-hidden lg:py-0.5 bg-black"
+          className="relative flex justify-between items-center overflow-hidden lg:py-0.5 bg-black"
         >
-          <div className="flex justify-between items-center w-full px-6 md:px-10">
+          <div className="flex justify-between items-center max-w-7xl w-full px-6 md:px-10">
             <div id="logo" className="text-md font-medium w-18 md:text-lg">
               <a href="#" className="flex items-center">
                 <img
@@ -104,7 +104,7 @@ const Navbar = () => {
               </div>
             </OutsideClickHandler>
             <div
-              className={!isNavOpen ? `block lg:hidden` : 'hidden lg:hidden'}
+              className={!isNavOpen ? `block md:hidden` : 'hidden md:hidden'}
               onClick={() => {
                 setIsNavOpen((prev) => !prev);
               }}
@@ -112,7 +112,7 @@ const Navbar = () => {
               <RiMenu3Fill className="text-3xl text-white" />
             </div>
             <div
-              className={isNavOpen ? `block lg:hidden` : 'hidden lg:hidden'}
+              className={isNavOpen ? `block md:hidden` : 'hidden md:hidden'}
               onClick={() => {
                 setIsNavOpen((prev) => prev);
               }}
