@@ -74,6 +74,8 @@ body {
 
 /* swimming pool section ⬇️*/
 .swimmingPool {
+  height: 600px;
+  width: 100%;
   background: url('/images/swimming-pool/Photo-Apr-01-2024-5-04-28-PM-1-scaled.jpg')
     repeat fixed 100%;
   background-position: center;
