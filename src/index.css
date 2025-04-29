@@ -61,6 +61,8 @@ body {
 /* pinnacle section ⬇️ */
 .pinnacleSection {
   background: url('/images/pinnacle/Photo-Feb-07-2024-5-48-26-PM-20-scaled.jpg')
-    repeat fixed 100%;
+    no-repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
 }
 /* pinnacle section ⬆️ */
