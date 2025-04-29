@@ -17,8 +17,8 @@ const data = [
 
 const CompanyCarousel = () => {
   return (
-    <section className="sectionWidth bg-white">
-      <div className="wrapper bg-white py-15 w-4/5 mx-auto">
+    <section className=" bg-white">
+      <div className="wrapper sectionWidth bg-white py-15 w-4/5 mx-auto">
         <Swiper
           {...sliderSettings}
           spaceBetween={30}

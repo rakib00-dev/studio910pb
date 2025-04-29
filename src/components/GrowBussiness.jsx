@@ -18,15 +18,15 @@ const data = [
 const GrowBussiness = () => {
   return (
     <section className="sectionWidth">
-      <div className="wrapper">
+      <div className="wrapper pb-20">
         <div className="pt-20 pb-20 grid gap-5 uppercase">
-          <h1 className="text-center text-[1.8rem] md:text-[2.5rem] font-light leading-12">
+          <h1 className="text-center text-[1.5rem] md:text-[2.5rem] font-light leading-8 md:leading-12">
             <span style={{ color: 'var(--primary-blue)' }}>
               Grow your business
             </span>{' '}
             with our real estate photography and videography.
           </h1>
-          <h3 className="text-center text-[1.8rem] font-light">
+          <h3 className="text-center text-[1.2rem] font-light">
             An <span style={{ color: 'var(--primary-blue)' }}>immersive</span>{' '}
             way to experience real estate.
           </h3>
