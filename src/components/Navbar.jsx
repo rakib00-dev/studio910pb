@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { RiMenu3Fill } from 'react-icons/ri';
+import { RxCross2 } from 'react-icons/rx';
 import OutsideClickHandler from 'react-outside-click-handler';
 
 const Navbar = () => {
@@ -104,12 +105,20 @@ const Navbar = () => {
               </div>
             </OutsideClickHandler>
             <div
-              className="lg:hidden"
+              className={!isNavOpen ? `block lg:hidden` : 'hidden lg:hidden'}
               onClick={() => {
                 setIsNavOpen((prev) => !prev);
               }}
             >
-              <RiMenu3Fill className="text-3xl" />
+              <RiMenu3Fill className="text-3xl text-white" />
+            </div>
+            <div
+              className={isNavOpen ? `block lg:hidden` : 'hidden lg:hidden'}
+              onClick={() => {
+                setIsNavOpen((prev) => prev);
+              }}
+            >
+              <RxCross2 className="text-3xl text-white" />
             </div>
           </div>
         </nav>
