@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CounterSection from './components/CounterSection';
+import CompanyCarousel from './components/CompanyCarousel';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <CounterSection />
+      <CompanyCarousel />
       <div className="mt-50" />
     </>
   );
