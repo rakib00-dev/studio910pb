@@ -11,9 +11,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* header section ⬇️ */
+/* Navbar section ⬇️ */
 .listHover:hover {
   color: var(--primary-blue);
-  translate: 12px;
+  transform: translateY(-8px);
 }
-/* header section ⬆️ */
+/* Navbar section ⬆️ */
+
+/* Hero section ⬇️ */
+/* .heroVideo {
+  width: 100%;
+  height: 100%;
+} */
+/* Hero section ⬆️ */
