@@ -11,7 +11,6 @@ const data = [
   '/images/company-carousel/Christian-Angle-Logo.png',
   '/images/company-carousel/Compass-Logo-good.png',
   '/images/company-carousel/corcoran-logo.svg',
-  '/images/company-carousel/Christian-Angle-Logo.png',
   '/images/company-carousel/Eklund-Gomez1.svg',
   '/images/company-carousel/Sothebys_logo-Good.png',
 ];
@@ -22,7 +21,7 @@ const CompanyCarousel = () => {
       <div className="wrapper bg-white py-15 w-4/5 mx-auto">
         <Swiper
           {...sliderSettings}
-          slidesPerView={5}
+          slidesPerView={3}
           spaceBetween={30}
           loop={true}
           centeredSlides={true}
@@ -32,7 +31,7 @@ const CompanyCarousel = () => {
           }}
           // navigation={true}
           modules={[Autoplay, Navigation]}
-          className="mySwiper flex justify-center items-center mx-40"
+          className="mySwiper flex justify-center items-center"
         >
           {data.map((src, i) => (
             <SwiperSlide key={i} className="flex justify-center items-center">
@@ -40,8 +39,8 @@ const CompanyCarousel = () => {
                 <img
                   src={src}
                   alt="company card"
-                  width={40}
-                  className=" md:scale-70 h-auto"
+                  width={200}
+                  className="scale-70 h-auto"
                 />
               </div>
             </SwiperSlide>
