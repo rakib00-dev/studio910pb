@@ -6,6 +6,7 @@ import GrowBussiness from './components/GrowBussiness';
 import Pinnacle from './components/Pinnacle';
 import GenesisSection from './components/GenesisSection';
 import PreviewSection from './components/PreviewSection';
+import DiscerningSection from './components/DiscerningSection';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Pinnacle />
       <GenesisSection />
       <PreviewSection />
+      <DiscerningSection />
       <div className="mt-50" />
     </>
   );
