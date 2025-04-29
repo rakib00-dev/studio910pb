@@ -1,14 +1,9 @@
 import React, { useRef, useState } from 'react';
 
-// Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { sliderSettings } from '../utils/swiperSettings';
 
@@ -16,6 +11,7 @@ const data = [
   '/images/company-carousel/Christian-Angle-Logo.png',
   '/images/company-carousel/Compass-Logo-good.png',
   '/images/company-carousel/corcoran-logo.svg',
+  '/images/company-carousel/Christian-Angle-Logo.png',
   '/images/company-carousel/Eklund-Gomez1.svg',
   '/images/company-carousel/Sothebys_logo-Good.png',
 ];
@@ -26,6 +22,7 @@ const CompanyCarousel = () => {
       <div className="wrapper bg-white py-15 w-4/5 mx-auto">
         <Swiper
           {...sliderSettings}
+          slidesPerView={5}
           spaceBetween={30}
           loop={true}
           centeredSlides={true}
