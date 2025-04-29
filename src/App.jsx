@@ -8,6 +8,7 @@ import GenesisSection from './components/GenesisSection';
 import PreviewSection from './components/PreviewSection';
 import DiscerningSection from './components/DiscerningSection';
 import Testimonial from './components/Testimonial';
+import SwimmingPool from './components/SwimmingPool';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <PreviewSection />
       <DiscerningSection />
       <Testimonial />
+      <SwimmingPool />
       <div className="mt-50" />
     </>
   );

@@ -71,3 +71,12 @@ body {
   background-size: cover;
 }
 /* pinnacle section ⬆️ */
+
+/* swimming pool section ⬇️*/
+.swimmingPool {
+  background: url('/images/swimming-pool/Photo-Apr-01-2024-5-04-28-PM-1-scaled.jpg')
+    repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
+}
+/* swimming pool section ⬆️ */
