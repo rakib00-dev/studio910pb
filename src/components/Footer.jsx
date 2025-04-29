@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  FaFacebook,
+  FaInstagram,
+  FaPhoneAlt,
+  FaSpotify,
+  FaYoutube,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -59,6 +66,54 @@ const Footer = () => {
           loading="lazy"
           className="relative w-full bottom-0"
         />
+        {/* social links */}
+        <div className="grid gap-15 py-25 wrapper">
+          <div className="flex justify-center items-center gap-6 border-b pb-15">
+            <a
+              href=""
+              className="transition-all duration-300 p-4 rounded-full border text-xl jumpHover cursor-pointer"
+            >
+              <FaFacebook className="" />
+            </a>
+            <a
+              href=""
+              className="transition-all duration-300 p-4 rounded-full border text-xl jumpHover cursor-pointer"
+            >
+              <FaYoutube className="" />
+            </a>
+            <a
+              href=""
+              className="transition-all duration-300 p-4 rounded-full border text-xl jumpHover cursor-pointer"
+            >
+              <FaSpotify className="" />
+            </a>
+            <a
+              href=""
+              className="transition-all duration-300 p-4 rounded-full border text-xl jumpHover cursor-pointer"
+            >
+              <FaPhoneAlt className="" />
+            </a>
+            <a
+              href=""
+              className="transition-all duration-300 p-4 rounded-full border text-xl jumpHover cursor-pointer"
+            >
+              <FaInstagram className="" />
+            </a>
+          </div>
+          <div className="text-xs flex justify-between items-center">
+            <p className="">
+              Copyright © {new Date().getFullYear()} Studio 910 PB
+            </p>
+            <div>
+              <a href="" className="hover:underline cursor-pointer">
+                910 Academy
+              </a>
+              <a href="" className="hover:underline cursor-pointer">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
