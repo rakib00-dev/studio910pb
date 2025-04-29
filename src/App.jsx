@@ -9,6 +9,7 @@ import PreviewSection from './components/PreviewSection';
 import DiscerningSection from './components/DiscerningSection';
 import Testimonial from './components/Testimonial';
 import SwimmingPool from './components/SwimmingPool';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <DiscerningSection />
       <Testimonial />
       <SwimmingPool />
+      <Footer />
       <div className="mt-50" />
     </>
   );
