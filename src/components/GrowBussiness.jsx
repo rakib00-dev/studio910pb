@@ -13,23 +13,27 @@ const data = [
   '/images/grow-bussiness/LIVINGuse_184-1024x683.jpg',
   '/images/grow-bussiness/Photo-Apr-09-2024-6-26-32-PM-1024x683.jpg',
   '/images/grow-bussiness/Photo-Dec-09-2023-6-05-54-PM-8-1024x683.jpg',
-  '/images/grow-bussiness/LIVINGuse_184-1024x683.jpg',
 ];
 
 const GrowBussiness = () => {
   return (
     <section className="sectionWidth">
       <div className="wrapper">
-        <div className="pt-5 pb-20 grid gap-5 uppercase">
+        <div className="pt-20 pb-20 grid gap-5 uppercase">
           <h1 className="text-center text-[1.8rem] md:text-[2.5rem] font-light leading-12">
-            Reflecting the{' '}
-            <span style={{ color: 'var(--primary-blue)' }}>aspirations</span>{' '}
-            <br /> of the modern buyer
+            <span style={{ color: 'var(--primary-blue)' }}>
+              Grow your business
+            </span>{' '}
+            with our real estate photography and videography.
           </h1>
+          <h3 className="text-center text-[1.8rem] font-light">
+            An <span style={{ color: 'var(--primary-blue)' }}>immersive</span>{' '}
+            way to experience real estate.
+          </h3>
         </div>
         <Swiper
           {...sliderSettings}
-          slidesPerView={5}
+          slidesPerView={3}
           spaceBetween={30}
           loop={true}
           centeredSlides={true}
@@ -42,9 +46,17 @@ const GrowBussiness = () => {
           className="mySwiper flex justify-center items-center mx-40"
         >
           {data.map((src, i) => (
-            <SwiperSlide key={i} className="flex justify-center items-center">
-              <div className="flex justify-center items-center">
-                <img src={src} alt="company card" width={140} className="" />
+            <SwiperSlide
+              key={i}
+              className="flex justify-center items-center w-full"
+            >
+              <div className="flex justify-center items-center w-full">
+                <img
+                  src={src}
+                  alt="company card"
+                  width={140}
+                  className="w-full h-full"
+                />
               </div>
             </SwiperSlide>
           ))}
