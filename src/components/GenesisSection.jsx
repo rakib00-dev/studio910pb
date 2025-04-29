@@ -3,7 +3,7 @@ import React from 'react';
 const GenesisSection = () => {
   return (
     <section className="sectionWidth">
-      <div className="wrapper grid md:grid-cols-2 gap-10 md:gap-20 py-20">
+      <div className="wrapper grid md:grid-cols-2 gap-10 md:gap-20 py-25">
         <img
           src="/images/genesis/IMG_6672-1024x683.jpg"
           alt=""
