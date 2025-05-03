@@ -105,7 +105,7 @@ const Footer = () => {
             <p className="">
               Copyright © {new Date().getFullYear()} Studio 910 PB
             </p>
-            <div>
+            <div className="flex gap-2">
               <a href="" className="hover:underline cursor-pointer">
                 910 Academy
               </a>
